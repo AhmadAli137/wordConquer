@@ -148,7 +148,7 @@ async def create_response():
         return {
             "title": "Error Occurred",
             "phonetics": "Error Occurred",
-            # "audio": "Error Occurred",
+            "audio": "Error Occurred",
             "definition": "Error Occurred",
             "letterCount": 0,
             "patterns": [],
