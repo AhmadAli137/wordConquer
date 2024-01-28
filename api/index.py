@@ -90,7 +90,7 @@ async def read_root():
     return {"message": "Hello, FastAPI!"}
 
 
-@app.get("/api/create_response/")
+@app.get("/api/create_response")
 async def create_response():
     # get json from words_dictionary.json
 

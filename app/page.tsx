@@ -22,7 +22,7 @@ export default function Home() {
   const [showHint, setShowHint] = useState(false);
 
   const fetchWordData = useCallback(() => {
-    fetch("/api/create_response/")
+    fetch("/api/create_response")
       .then((response) => response.json())
       .then((data) => {
         setWordData(data);
