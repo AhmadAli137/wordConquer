@@ -6,7 +6,7 @@ import FeatureFinder from "@/components/FeatureFinder";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Spell from "@/components/Spell";
 
-const HintIcon = () => <span>🔍</span>; 
+const HintIcon = () => <span>🔍</span>;
 
 interface WordCardProps {
   title: string;
@@ -22,7 +22,7 @@ export default function Home() {
   const [showHint, setShowHint] = useState(false);
 
   const fetchWordData = useCallback(() => {
-    fetch("/api/create_response")
+    fetch("/api/create_response/")
       .then((response) => response.json())
       .then((data) => {
         setWordData(data);
